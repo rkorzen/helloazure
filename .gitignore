@@ -2,3 +2,4 @@
 .idea
 __pycache__
 .dane-wrazliwe.txt
+.env
