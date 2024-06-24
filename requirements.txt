@@ -6,3 +6,6 @@ django-redis==5.4.0
 gunicorn==22.0.0
 azure-identity==1.17.1
 pillow==10.3.0
+django-storages==1.13.2
+azure-core==1.26.3
+azure-storage-blob==12.14.1
