@@ -3,4 +3,5 @@ psycopg2-binary==2.9.9
 python-dotenv==1.0.1
 whitenoise==6.6.0
 django-redis==5.4.0
-gunicorn
+gunicorn==22.0.0
+azure-identity==1.17.1

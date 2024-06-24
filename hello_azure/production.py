@@ -1,5 +1,5 @@
 import os
-
+from azure.identity import DefaultAzureCredential
 from .settings import *  # noqa
 from .settings import BASE_DIR
 
@@ -49,4 +49,23 @@ CACHES = {
                 "COMPRESSOR": "django_redis.compressors.zlib.ZlibCompressor",
         },
     }
+}
+
+STORAGES = {
+    "default": {
+        "BACKEND": "storages.backends.azure_storage.AzureStorage",
+        "OPTIONS": {
+            "token_credential": DefaultAzureCredential(),
+            "account_name": "alxstorage",
+            "azure_container": "media",
+        },
+    },
+    "staticfiles": {
+        "BACKEND": "storages.backends.azure_storage.AzureStorage",
+        "OPTIONS": {
+            "token_credential": DefaultAzureCredential(),
+            "account_name": "alxstorage",
+            "azure_container": "static",
+        },
+    },
 }
