@@ -30,11 +30,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run migrations
-        run: python manage.py migrate
-
-      - name: Collect static files
-        run: python manage.py collectstatic --no-input
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Zip artifact for deployment

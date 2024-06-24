@@ -199,3 +199,24 @@ jobs:
     - Kliknij `Add secret`.
 
 Po wykonaniu tych kroków, Twoje workflow GitHub Actions powinno być gotowe do automatycznego wdrożenia aplikacji na Azure przy każdym pushu do gałęzi `main`. Jeśli masz dalsze pytania lub potrzebujesz dodatkowej pomocy, daj znać!
+
+
+
+
+# TROUBLESHOOTING
+
+
+Przy zmianie workflow może być problem z wypchnięciem
+
+ ! [remote rejected] master -> master (refusing to allow a Personal Access Token to create or update workflow `.github/workflows/master_alxazure.yml` without `workflow` scope)
+error: nie można wypchnąć niektórych referencji do „https://github.com/rkorzen/helloazure.git”
+
+
+
+
+    create a PAT (personal access token): official doc here. Make sure to tick the box "workflow" when creating it.
+    In the terminal, instead of the classic
+    git remote add origin https://github.com/<account>/<repo>.git
+    swap it by
+    git remote add origin https://<PAT>@github.com/<account>/<repo>.git
+    Follow-up with the classic git branch -M main and git push -u origin main
