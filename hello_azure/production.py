@@ -56,7 +56,7 @@ STORAGES = {
         "BACKEND": "storages.backends.azure_storage.AzureStorage",
         "OPTIONS": {
             "token_credential": DefaultAzureCredential(),
-            "account_name": "alxstorage",
+            "account_name": "alxstoragex1",
             "azure_container": "media",
         },
     },
@@ -64,7 +64,7 @@ STORAGES = {
         "BACKEND": "storages.backends.azure_storage.AzureStorage",
         "OPTIONS": {
             "token_credential": DefaultAzureCredential(),
-            "account_name": "alxstorage",
+            "account_name": "alxstoragex1",
             "azure_container": "static",
         },
     },
