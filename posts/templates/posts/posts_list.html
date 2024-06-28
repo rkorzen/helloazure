@@ -5,6 +5,10 @@
   <title>Lista postów</title>
 </head>
 <body>
-Tu będzie lista postów
+<ul>
+{% for post in posts %}
+  <li><a href="{% url 'post_details' post.id %}">{{ post.title }}</a></li>
+{% endfor %}
+  </ul>
 </body>
 </html>
