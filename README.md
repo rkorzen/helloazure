@@ -220,3 +220,7 @@ error: nie można wypchnąć niektórych referencji do „https://github.com/rko
     swap it by
     git remote add origin https://<PAT>@github.com/<account>/<repo>.git
     Follow-up with the classic git branch -M main and git push -u origin main
+
+
+https://testdriven.io/blog/django-azure-app-service/
+
